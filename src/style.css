@@ -41,6 +41,11 @@
   --color-olive-800: #656347;
   --color-olive-900: #53523b;
   --color-olive-950: #2c2b1e;
+
+  --spacing-6.5: 26px;
+  --spacing-82.8: 331px;
+  --spacing-110.8: 443px;
+  --spacing-160.7: 643px;
 }
 
 @font-face {
@@ -104,6 +109,7 @@
 html,
 body {
   font-family: var(--font-manrope);
+  font-size: 18px;
   height: 100%;
   color: var(--color-dark);
   background-color: var(--color-light);

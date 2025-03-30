@@ -1,79 +1,66 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@import 'tailwindcss';
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+@theme {
+  --color-dark: #0F0F0F;
+  --color-light: #FFFFFF;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-primary-50: #f7f7f8;
+  --color-primary-100: #efeef0;
+  --color-primary-200: #dad8df;
+  --color-primary-300: #b8b7c2;
+  --color-primary-400: #928fa1;
+  --color-primary-500: #757186;
+  --color-primary-600: #5f5b6e;
+  --color-primary-700: #4e4b59;
+  --color-primary-800: #42404c;
+  --color-primary-900: #3b3842;
+  --color-primary-950: #1a191d;
+
+  --color-secondary-50: #edfcf3;
+  --color-secondary-100: #d4f7e0;
+  --color-secondary-200: #aceec6;
+  --color-secondary-300: #76dfa5;
+  --color-secondary-400: #3ec981;
+  --color-secondary-500: #189b5c;
+  --color-secondary-600: #0e8d52;
+  --color-secondary-700: #0c7045;
+  --color-secondary-800: #0c5937;
+  --color-secondary-900: #0b4930;
+  --color-secondary-950: #05291c;
+
+  --color-olive-50: #f7f8f4;
+  --color-olive-100: #ecefe5;
+  --color-olive-200: #d8ddcb;
+  --color-olive-300: #c1c8a9;
+  --color-olive-400: #abb186;
+  --color-olive-500: #9ca16e;
+  --color-olive-600: #929462;
+  --color-olive-700: #7b7b53;
+  --color-olive-800: #656347;
+  --color-olive-900: #53523b;
+  --color-olive-950: #2c2b1e;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+* {
+  box-sizing: border-box;
 }
 
+html,
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  height: 100%;
+  color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+body header footer {
+  position: sticky;
+  top: 100vh;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+html {
+  scroll-behavior: smooth;
 }
 
-.card {
-  padding: 2em;
-}
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+.body-overflow-hidden {
+  overflow: hidden;
 }

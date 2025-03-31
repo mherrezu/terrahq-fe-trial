@@ -5,6 +5,7 @@
 
   --color-dark: #0F0F0F;
   --color-light: #FFFFFF;
+  --color-pink: #F78BD8;
 
   --color-primary-50: #f7f7f8;
   --color-primary-100: #efeef0;
@@ -42,9 +43,15 @@
   --color-olive-900: #53523b;
   --color-olive-950: #2c2b1e;
 
+  --spacing-3.7: 15px;
   --spacing-6.5: 26px;
+  --spacing-69: 276px;
+  --spacing-18: 72px;
   --spacing-82.8: 331px;
+  --spacing-90.5: 362px;
+  --spacing-108: 432px;
   --spacing-110.8: 443px;
+  --spacing-151: 604px;
   --spacing-160.7: 643px;
 }
 
@@ -100,10 +107,6 @@
   font-weight: 200;
   src: local('Manrope ExtraLight'), local('Manrope-ExtraLight'),
     url(../src/assets/fonts/Manrope/Manrope-ExtraLight.ttf) format('opentype');
-}
-
-* {
-  box-sizing: border-box;
 }
 
 html,

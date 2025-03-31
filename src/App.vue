@@ -1,9 +1,7 @@
 <template>
   <main v-if="landingComponents" class="min-h-screen">
-    <template v-for="(component, index) in landingComponents" :key="index">
-      <section v-if="component">
-        <component :is="component.component" v-bind="component.props"></component>
-      </section>
+    <template v-for="(component, index) in landingComponents" :key="`component-${component.component}-${index}`">
+      <component v-if="component" :is="component.component" v-bind="component.props"></component>
     </template>
   </main>
 </template>

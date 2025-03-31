@@ -45,12 +45,14 @@
 
   --spacing-3.7: 15px;
   --spacing-6.5: 26px;
+  --spacing-29: 116px;
   --spacing-69: 276px;
   --spacing-18: 72px;
   --spacing-82.8: 331px;
   --spacing-90.5: 362px;
   --spacing-108: 432px;
   --spacing-110.8: 443px;
+  --spacing-118.2: 473px;
   --spacing-151: 604px;
   --spacing-160.7: 643px;
 }
@@ -107,6 +109,10 @@
   font-weight: 200;
   src: local('Manrope ExtraLight'), local('Manrope-ExtraLight'),
     url(../src/assets/fonts/Manrope/Manrope-ExtraLight.ttf) format('opentype');
+}
+
+* {
+  box-sizing: border-box;
 }
 
 html,

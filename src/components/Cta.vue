@@ -7,8 +7,8 @@
       </div>
       <div class="sm:w-1/2 grid grid-cols-2 grid-rows-2 w-full h-full relative">
         <div class=""></div>
-        <img :src="image_2" alt="Image 2" class="object-cover w-full h-full" />
-        <img :src="image_1" alt="Image 1" class="object-cover w-full h-full" />
+        <img :src="image_2" alt="Two boats moored on a lake" class="object-cover w-full h-full" />
+        <img :src="image_1" alt="Notebook with a nature drawing held by a hand" class="object-cover w-full h-full" />
         <Pill :label="pill" pillPosition="bottom-right" />
     </div>
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div :class="`relative h-${imgHeight} w-${imgWidth}`">
     <Pill :label="pill" :pillPosition="pillPosition" :pillType="pillType" />
-    <img :src="image" class="w-full h-full object-cover" />
+    <img :src="image" :alt="getImageAlt(image)" class="w-full h-full object-cover" />
   </div>
 </template>
 
@@ -37,5 +37,22 @@ export default {
         default: "Type A",
     },
   },
+  methods: {
+    getImageAlt(url) {
+      for (var i = url.length - 1; i >= 0; i--) {
+      if (url[i] === '.') {
+          var substring = '';
+          for (var j = i - 1; j >= 0; j--) {
+              if (url[j] === '/') {
+                  return substring;
+              }
+              substring = url[j] + substring;
+          }
+          return substring;
+      }
+    }
+      return 'image';
+    },
+  }
 }
 </script>

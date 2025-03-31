@@ -29,8 +29,8 @@
         leave-to-class="opacity-0 -translate-y-5"
       >
         <ul v-show="menuIsOpen" 
-          class="absolute z-20 top-20 left-0 w-full h-screen bg-light sm:hidden">
-          <li v-for="(item, key) in menu" :key="`header-links-${key}`" 
+          class="absolute z-20 top-20 left-0 flex flex-col items-center w-full h-screen bg-light sm:hidden">
+          <li v-for="(item, key) in menu" :key="`header-links-mobile-${key}`" 
             class="cursor-pointer hover:text-secondary-500 px-6 py-4 sm:p-0">
             {{ item }}
           </li>

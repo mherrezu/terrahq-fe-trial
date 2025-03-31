@@ -1,5 +1,5 @@
 <template>
-  <div class=" text-light lg:font-bold text-xs lg:text-sm" :class="{
+  <div class=" text-light font-bold text-xs lg:text-sm" :class="{
     'absolute top-4 right-4 px-3 py-2 rounded-full': pillPosition === 'top-right',
     'absolute top-4 left-4 px-3 py-2 rounded-full': pillPosition === 'top-left',
     'absolute bottom-4 left-4 px-3 py-2 rounded-full': pillPosition === 'bottom-left',

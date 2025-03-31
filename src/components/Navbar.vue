@@ -5,7 +5,7 @@
         <img :src="logo" alt="logo-terra" class="h-full w-full object-cover" />
       </div>
 
-      <ButtonCta @click="handleMenu" color="white" size="sm"
+      <ButtonCta @click="handleMenu" color="white" size="sm" aria-label="menu button"
         class="block sm:hidden">
         <svg v-if="!menuIsOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M10 6h10"></path> <path d="M4 12h16"></path> <path d="M7 12h13"></path> <path d="M4 18h10"></path> </svg> 
         <svg v-if="menuIsOpen" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" width="24" height="24" stroke-width="2"> <path d="M18 6l-12 12"></path> <path d="M6 6l12 12"></path> </svg>      

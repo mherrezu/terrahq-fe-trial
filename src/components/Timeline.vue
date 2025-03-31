@@ -17,6 +17,7 @@
           <div class="absolute top-2 sm:top-1 left-0 h-2.5 sm:h-3.7 bg-secondary-500 rounded-lg"
             :style="{ width: `${rangePosition}%` }"
           ></div>
+          <label for="progress-rang"></label>
           <input 
             type="range" 
             id="progress-range" 

@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto p-14 lg:p-30 flex flex-col items-center">
+  <section class="  p-14 lg:p-30 flex flex-col items-center">
     <h2 class="text-2xl lg:text-[40px] font-bold text-center mb-10 md:mb-18">{{ title }}</h2>
     <div class="mt-14">
       <div class="flex flex-col w-72 sm:w-[640px] lg:w-[1002px]">

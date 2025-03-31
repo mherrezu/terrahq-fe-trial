@@ -8,7 +8,7 @@
 
     <h1 class="text-5xl md:text-[64px] font-bold">{{ heroTitle }}</h1>
     <p class="mt-4 max-w-xl">{{ subtitle }}</p>
-    <ButtonCta @click="handleMenu" size="xxl" :color="isFirstAccess ? 'secondary' : 'black'">
+    <ButtonCta size="xxl" :color="isFirstAccess ? 'secondary' : 'black'">
       {{ buttonLabel }}</ButtonCta>
   </section>
 </template>
